@@ -1,6 +1,8 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, createContext } from "react";
 import "../styles/Form.css";
+import Tray from "./Tray";
 
+export const DataContext = createContext();
 function Form() {
   const [number, setNumber] = useState(100);
   const [algorithm, setAlgorithm] = useState("bubbleSort");
@@ -72,6 +74,9 @@ function Form() {
         >
           Generate Sample ↻
         </button>
+        <DataContext.Provider value={data}>
+          <Tray algorithm={algorithm} data={data} setData={setData} />
+        </DataContext.Provider>
       </div>
     </>
   );
