@@ -1,6 +1,6 @@
 # Sorting Algorithm Visualizer
 
-Sorting Algorithm Visualizer is a simple React app that allows you to see the real-time process of various sorting algorithms. The app visually represents an array of numbers as bars, which change dynamically as sorting takes place.
+[Sorting Algorithm Visualizer](https://dubstabber.github.io/Sorting-algorithm-visualizer/) is a simple React app that allows you to see the real-time process of various sorting algorithms. The app visually represents an array of numbers as bars, which change dynamically as sorting takes place.
 
 ## Features
 
