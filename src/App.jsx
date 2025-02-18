@@ -6,6 +6,7 @@ function App() {
     <>
       <Header />
       <Form />
+      <input style={{ display: "none" }} id="isSorted" defaultValue="0" />
     </>
   );
 }

@@ -15,6 +15,17 @@ function Form() {
   }
 
   function generateSample(number) {
+    document.getElementById("isSorted").value = 0;
+
+    if (number <= 1) {
+      window.alert("The minimum array size is 2 , please enter a bigger size");
+      return;
+    }
+    if (number > 5000) {
+      window.alert("The max array size is 5000 , please enter a smaller size");
+      return;
+    }
+
     const newData = [];
     let dataCounter = 0;
     let randomElement;
@@ -25,6 +36,7 @@ function Form() {
         dataCounter++;
       }
     }
+    setData(newData);
   }
 
   useEffect(() => {
