@@ -25,7 +25,6 @@ function Tray(props) {
     console.log("this is the value of props.algorithm ; ", props.algorithm);
     switch (props.algorithm) {
       case "bubbleSort": {
-        console.log("this is from the bubble sort casre");
         BubbleSort(props.data, props.setData, speed, jump);
         break;
       }
